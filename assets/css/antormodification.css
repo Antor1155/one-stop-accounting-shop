@@ -56,13 +56,39 @@ h2.onovo-title-2{
     width: 200px;
 }
 
+.onovo-cta-social{
+    width: auto;
+    height: auto;
+} 
+
+.get-in-touch a{
+    font-size: 1.5rem;
+}
+
+.get-in-touch p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.188);
+}
+
 @media only screen and (max-width: 500px) {
     .center-on-mobile{
         text-align: center;
     }
 
+    .antor-h2{
+        margin-top: 3rem;
+    }
+
     .subscribe-form{
         width: 100%;
         flex-direction: column;
+    }
+
+    .get-in-touch a{
+        font-size: 1rem;
+    }
+
+    .subscribe-form {
+        align-items: center;
     }
 }
