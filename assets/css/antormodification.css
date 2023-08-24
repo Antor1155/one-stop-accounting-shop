@@ -45,8 +45,24 @@ h2.onovo-title-2{
 }
 
 
+.subscribe-form{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.subscribe-form button{
+    width: 200px;
+}
+
 @media only screen and (max-width: 500px) {
     .center-on-mobile{
         text-align: center;
+    }
+
+    .subscribe-form{
+        width: 100%;
+        flex-direction: column;
     }
 }
