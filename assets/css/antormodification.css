@@ -31,10 +31,19 @@ h2.onovo-title-2{
 
 .antor-h2{
     text-align: center;
-    margin-top: -8%;
+    margin-bottom: 70px;
     color: var(--antor-theme-color);
     text-shadow:1px 1px 1px black;
 }
+
+.onovo-service-grid-item .image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid var(--antor-theme-color);
+    object-fit: contain;
+}
+
 
 @media only screen and (max-width: 500px) {
     .center-on-mobile{
