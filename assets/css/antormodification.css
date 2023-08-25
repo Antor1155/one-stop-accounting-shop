@@ -20,9 +20,10 @@
     height: 105vh;
     background-image: linear-gradient(146deg, #837c7c, #444460);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     transition: opacity .5s;
+    transform: translate(-50%, -50%);
 }
 
 .antor-h1 span{
