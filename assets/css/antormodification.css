@@ -3,6 +3,48 @@
     --antor-theme-color:  #D8FF36;
 }
 
+@keyframes blur-to-visible {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* video cover, hiden on load  */
+#hide-on-load {
+    width: 100vw;
+    height: 105vh;
+    background-image: linear-gradient(146deg, #837c7c, #444460);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .5s;
+}
+
+.antor-h1 span{
+    opacity: 0;
+    display: block;
+    position: relative;
+}
+
+.antor-h1 span:nth-child(1){
+    animation: blur-to-visible 1s .1s ease-out forwards;
+    font-size: 6rem;
+    margin-bottom: -10px;
+}
+.antor-h1 span:nth-child(2){
+    animation: blur-to-visible 1s .2s ease-out forwards;
+}
+.antor-h1 span:nth-child(3){
+    animation: blur-to-visible 1s .3s ease-out forwards;
+}
+
+
+
 .onovo-header {
     background-color: #4b10104f;
 }
@@ -75,6 +117,11 @@ h2.onovo-title-2{
 }
 
 @media only screen and (max-width: 500px) {
+    .antor-h1 span:nth-child(1){
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
     .center-on-mobile{
         text-align: center;
     }
