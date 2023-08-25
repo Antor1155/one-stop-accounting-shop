@@ -7821,7 +7821,8 @@ span.onovo-lnk.lnk--active::after,
 .wp-block-tag-cloud a,
 .sidebar__tag-item,
 .onovo-post-tags a {
-  background-color: #3b879d;
+  /* background-color: #3b879d; */
+  background-color: #D8FF36;
 }
 
 .onovo-team-item:hover .num,
