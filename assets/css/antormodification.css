@@ -51,6 +51,16 @@
     animation: blur-to-visible 1s .4s ease-out forwards;
 }
 
+p.a-title{
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 0;
+    /* top:0; */
+    right: 0;
+    text-align: center;
+
+    animation: blur-to-visible 1s .2s ease-out forwards;
+}
 
 
 .onovo-header {
@@ -130,6 +140,10 @@ h2.onovo-title-2{
         margin-bottom: 0;
     }
 
+    .onovo-play-btn{
+        display: none;
+    }
+
     .center-on-mobile{
         text-align: center;
     }
@@ -150,4 +164,6 @@ h2.onovo-title-2{
     .subscribe-form {
         align-items: center;
     }
+
+
 }
