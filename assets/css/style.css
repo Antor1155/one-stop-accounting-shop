@@ -7823,6 +7823,7 @@ span.onovo-lnk.lnk--active::after,
 .onovo-post-tags a {
   /* background-color: #3b879d; */
   background-color: #D8FF36;
+  background-color: #FF6000;
 }
 
 .onovo-team-item:hover .num,
