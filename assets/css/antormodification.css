@@ -128,11 +128,18 @@ h2.onovo-title-2{
 
 .get-in-touch a{
     font-size: 1.5rem;
+    color: var(--antor-theme-color);
 }
 
 .get-in-touch p{
     color: white;
     background-color: rgba(0, 0, 0, 0.188);
+}
+
+
+/* more about us or this kind on button  */
+.onovo-hover-btn::after, .onovo-btn .arrow::before{
+    background-color: var(--antor-theme-color);
 }
 
 @media only screen and (max-width: 500px) {
