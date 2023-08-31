@@ -118,6 +118,7 @@ h2.onovo-title-2{
 }
 .subscribe-form button:hover{
     color: black;
+    background-color: var(--antor-theme-color);
 }
 
 .onovo-cta-social{
