@@ -142,10 +142,6 @@ h2.onovo-title-2{
 }
 
 @media only screen and (max-width: 500px) {
-    .antor-h1 span:nth-child(1){
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
 
     p.a-title{
         right:0;
