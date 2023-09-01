@@ -1,89 +1,926 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en-US">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.3.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.3.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<title>One stop accounting shop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="author" content="bslthemes" />
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<!-- Fonts -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Epilogue%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&#038;display=swap"
+		type="text/css" media="all" />
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<!-- CSS STYLES -->
+	<link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/antormodification.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+	<!-- Page -->
+	<div class="onovo-page footer--fixed">
+
+
+
+		<!-- Header -->
+		<header class="onovo-header header--white">
+			<div class="header--builder">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center">
+
+							<!-- Logo -->
+							<div class="onovo-logo-image" style="max-width: 70px">
+								<a href="index.html">
+									<img src="assets/images/logo-black" alt="Onovo" />
+									<img class="logo--white" src="assets/mockup-logo.jpg" alt="Onovo" />
+								</a>
+							</div>
+
+						</div>
+						<div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-6 align-self-center align-center">
+
+							<!-- Menu Hamburger -->
+							<a href="#" class="onovo-menu-btn"><span></span></a>
+							<div class="onovo-menu-popup align-left">
+								<div class="onovo-menu-overlay"></div>
+								<div class="onovo-menu-overlay-after"></div>
+								<div class="onovo-menu-container onovo--noscroll">
+									<div class="container">
+										<div class="onovo-menu">
+											<ul class="onovo-menu-nav">
+												<li>
+													<a class="onovo-lnk lnk--active" href="index.html">Home</a>
+
+												</li>
+
+												<li>
+													<a class="onovo-lnk lnk--active" href="blog.html">Blog</a>
+												</li>
+												<li>
+													<a class="onovo-lnk lnk--active" href="contact-us.html">Contact
+														Us</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center align-right">
+
+							<!-- Button -->
+							<!-- <a class="onovo-head-btn onovo-hover-btn" href="projects.html"> -->
+							<a class="onovo-head-btn onovo-hover-btn" href="mailto:Info@onestopaccountingshop.com">
+								<span>
+									<span class="onovo-lnk lnk--active">BOOK TODAY</span>
+								</span>
+								<i class="arrow">
+									<span></span>
+								</i>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<!-- Onovo Hero -->
+			<section class="onovo-section onovo-hero">
+
+				<div class="image">
+					<video autoplay muted loop playsinline id="heroVideo">
+						<source src="assets/video/hoboken-city.mp4" type="video/mp4">
+					</video>
+					<div class="ovrl" style="opacity: 0.25;"></div>
+				</div>
+
+				<div class="container">
+					<div id="hide-on-load"></div>
+
+					<h1 class="onovo-text-white antor-h1">
+						<span>One<br></span>
+						<span>Stop<br></span>
+						<span>Accounting<br></span>
+						<span>shop <br></span>
+					</h1>
+
+					<p class="onovo-text-white a-title">All of your accounting <br> at one place</p>
+
+					<a href="#" class="onovo-play-btn">
+						<span class="play-circles"></span>
+						<span class="play-lines">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</a>
+				</div>
+			</section>
+
+			<!-- Onovo About -->
+			<section class="onovo-section gap-top-100 gap-bottom-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-12">
+
+									<!-- Heading -->
+									<div class="onovo-heading gap-bottom-40 center-on-mobile">
+										<div class="onovo-subtitle-1">
+											<span> Welcome to OSAS </span>
+										</div>
+										<h2 class="onovo-title-2">
+											Serving our <br>Community
+										</h2>
+									</div>
+
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-12 hide-on-desktop gap-bottom-60">
+
+									<!-- Number -->
+									<div class="onovo-number onovo-circle-text mx-auto">
+										<div class="num onovo-text-white">
+											<span> 10 </span>
+										</div>
+										<div class="label onovo-text-black onovo-circle-text-label"> Years of Experience with happy customer </div>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- Description -->
+							<div>
+								<h5 class="text-uppercase">Our Goal</h5>
+								<p>One Stop Accounting Shop specializes in full service accounting and we go beyond the
+									traditional accountant. We understand running a business is not easy, so we are here
+									to take that stress away. We are fully equipped to handle the books for you, leaving
+									you to worry less and live more. </p>
+								<a class="onovo-btn onovo-hover-btn" href="#reviews">
+									<i class="arrow"><span></span></i>
+									<span> More About Us </span>
+								</a>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 hide-on-mobile">
+
+							<!-- Number -->
+							<div class="onovo-number onovo-circle-text mrg-right">
+								<div class="num onovo-text-white">
+									<span> 10 </span>
+								</div>
+								<div class="label onovo-text-black onovo-circle-text-label"> Years of Experience with happy customer</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Onovo Services -->
+			<section class="onovo-section gap-bottom-140">
+				<div class="container-xl">
+					<h2 class="antor-h2">OUR SERVICES</h2>
+					<!-- Services items -->
+					<div class="row onovo-services-grid-fw">
+
+						<!--service item-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
+							<div class="onovo-service-grid-item onovo-hover-1">
+								<div class="image">
+									
+										<img decoding="async" src="assets/anImages/team.webp" alt="Creation" />
+									
+								</div>
+								<h5 class="onovo-title-3">
+									
+										<span> Compliance </span>
+									
+								</h5>
+								<div class="onovo-text">
+									<div>
+										<p>Developing Your Business is about so much more than marketing. It’s also
+											about
+											aesthetics.</p>
+									</div>
+								</div>
+								<div class="onovo-bubble">
+									<div class="bubble-1"></div>
+									<div class="bubble-2"></div>
+									<div class="bubble-3"></div>
+								</div>
+							</div>
+						</div>
+
+						<!--service item-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
+							<div class="onovo-service-grid-item onovo-hover-1 active active--default">
+								<div class="image">
+									
+										<img decoding="async" src="assets/anImages/management.jpg" alt="Websites" />
+									
+								</div>
+								<h5 class="onovo-title-3">
+									
+										<span> Management </span>
+									
+								</h5>
+								<div class="onovo-text">
+									<div>
+										<p>Developing Your Business is about so much more than marketing. It’s also
+											about
+											aesthetics.</p>
+									</div>
+								</div>
+								<div class="onovo-bubble">
+									<div class="bubble-1"></div>
+									<div class="bubble-2"></div>
+									<div class="bubble-3"></div>
+								</div>
+							</div>
+						</div>
+
+						<!--service item-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
+							<div class="onovo-service-grid-item onovo-hover-1">
+								<div class="image">
+									
+										<img decoding="async" src="assets/anImages/advisory.jpg" alt="Studio" />
+									
+								</div>
+								<h5 class="onovo-title-3">
+									
+										<span> Advisory </span>
+									
+								</h5>
+								<div class="onovo-text">
+									<div>
+										<p>Developing Your Business is about so much more than marketing. It’s also
+											about
+											aesthetics.</p>
+									</div>
+								</div>
+								<div class="onovo-bubble">
+									<div class="bubble-1"></div>
+									<div class="bubble-2"></div>
+									<div class="bubble-3"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<!-- subscribe with email section  -->
+			<section class="mb-5">
+				<h3 class="text-center">Sign-up for monthly blogs</h3>
+
+				<form id="subscriptionForm" class="subscribe-form">
+					<input name="email" type="email" placeholder="Email" required />
+					<button type="submit" class="text-center pl-0"> subscribe </button>
+				</form>
+			</section>
+
+			<!-- Onovo Ticker -->
+			<section class="onovo-section gap-bottom-140">
+
+				<!-- Ticker swiper -->
+				<div class="onovo-ticker-slider gap-top-90 gap-bottom-100">
+					<div class="swiper-container js-ticker-slider" data-autoplay="12000">
+						<div class="swiper-wrapper">
+
+							<!--slide-->
+							<div class="swiper-slide">
+								<h5 class="title onovo-text-white">
+									<a href="service-detail.html">
+										<span> - Brand Strategy </span>
+									</a>
+								</h5>
+							</div>
+
+							<!--slide-->
+							<div class="swiper-slide">
+								<h5 class="title onovo-text-white">
+									<a href="service-detail.html">
+										<span> - Good support </span>
+									</a>
+								</h5>
+							</div>
+
+							<!--slide-->
+							<div class="swiper-slide">
+								<h5 class="title onovo-text-white">
+									<a href="service-detail.html">
+										<span> - Advisory on porjects </span>
+									</a>
+								</h5>
+							</div>
+
+							<!--slide-->
+							<div class="swiper-slide">
+								<h5 class="title onovo-text-white">
+									<a href="service-detail.html">
+										<span> - Management / Compliance </span>
+									</a>
+								</h5>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- Onovo Reviews -->
+			<section id="reviews" class="onovo-section gap-bottom-140">
+				<div class="container">
+
+					<!-- Reviews -->
+					<div class="onovo-reviews">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+								<!-- Heading -->
+								<div class="onovo-reviews-titles">
+									<h2 class="onovo-title-2">
+										<span data-splitting data-onovo-scroll> Testimonials </span>
+									</h2>
+									<div class="onovo-reviews-summary">
+										<span class="label onovo-text-black">
+											<span data-splitting data-onovo-scroll> 4.0 </span>
+										</span>
+										<span class="onovo-stars">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</span>
+										<span class="label">
+											<span data-splitting data-onovo-scroll> Rating from all Client's </span>
+										</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+								<!-- Reviews swiper -->
+								<div class="onovo-reviews-carousel">
+									<div class="swiper-container js-reviews-carousel" data-loop="false">
+										<div class="swiper-wrapper">
+
+											<!--slide-->
+											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+												<div class="text">
+													<div data-splitting>
+														<p>“ Their high level of customer service <br />complemented
+															their technical expertise. <br />They were responsive,
+															supportive, and <br />communicative. Their dedication to
+															<br />the project was impressive. ”
+														</p>
+													</div>
+												</div>
+												<h5 class="title">
+													<span data-splitting> Thomas Smith </span>
+												</h5>
+												<div class="subtitle">
+													<span data-splitting> Customer Support </span>
+												</div>
+												<div class="onovo-stars stars--small">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+
+											<!--slide-->
+											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+												<div class="text">
+													<div data-splitting>
+														<p>“ Their high level of customer service <br />complemented
+															their technical expertise. <br />They were responsive,
+															supportive, and <br />communicative. Their dedication to
+															<br />the project was impressive. ”
+														</p>
+													</div>
+												</div>
+												<h5 class="title">
+													<span data-splitting> Mike Cameron </span>
+												</h5>
+												<div class="subtitle">
+													<span data-splitting> Code Quality </span>
+												</div>
+												<div class="onovo-stars stars--small">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</div>
+
+											<!--slide-->
+											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+												<div class="text">
+													<div data-splitting>
+														<p>“ Their high level of customer service <br />complemented
+															their technical expertise. <br />They were responsive,
+															supportive, and <br />communicative. Their dedication to
+															<br />the project was impressive. ”
+														</p>
+													</div>
+												</div>
+												<h5 class="title">
+													<span data-splitting> Jessica Brown </span>
+												</h5>
+												<div class="subtitle">
+													<span data-splitting> Design Quality </span>
+												</div>
+												<div class="onovo-stars stars--small">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<!--navs-->
+									<div class="js-reviews-carousel-navs">
+										<div class="onovo-prev js-reviews-carousel-prev onovo-hover-2">
+											<i></i>
+										</div>
+										<div class="onovo-next js-reviews-carousel-next onovo-hover-2">
+											<i></i>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Onovo Video -->
+			<section class="onovo-section">
+				<div class="container">
+
+					<!--video-->
+					<div class="onovo-video" data-onovo-overlay data-onovo-scroll>
+						<div class="image" style="background-image: url(assets/anImages/improvement.jpg);"></div>
+						<iframe class="js-video-iframe"
+							data-src="https://www.youtube.com/embed/Gu6z6kIukgg?showinfo=0&rel=0&autoplay=1"></iframe>
+						<div class="play onovo-circle-text">
+							<div class="arrow"></div>
+							<div class="label onovo-text-black onovo-circle-text-label"> Play Video - Play Video - Play Video - </div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Onovo Numbers -->
+			<section class="onovo-section gap-top-140 gap-bottom-140">
+				<div class="container">
+
+					<!-- Numbers items -->
+					<div class="row">
+
+						<!--number item-->
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
+							<div class="onovo-counter">
+								<div class="num onovo-text-white js-counter" data-end-value="23">0</div>
+								<div class="label"> Team members </div>
+							</div>
+						</div>
+
+						<!--number item-->
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
+							<div class="onovo-counter">
+								<div class="num onovo-text-white js-counter" data-end-value="99">0</div>
+								<div class="num-after onovo-text-white"> + </div>
+								<div class="label"> Completed projects </div>
+							</div>
+						</div>
+
+						<!--number item-->
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
+							<div class="onovo-counter">
+								<div class="num onovo-text-white js-counter" data-end-value="12">0</div>
+								<div class="num-after onovo-text-white"> M </div>
+								<div class="label"> Lines of code </div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Onovo CTA -->
+			<section class="onovo-section gap-top-140 gap-bottom-140"
+				style="background-image: url(assets/anImages/happyideas.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+							<!-- Heading -->
+							<div class="onovo-heading gap-bottom-40 onovo-text-white">
+								<div class="onovo-subtitle-1">
+									<span> Get in Touch </span>
+								</div>
+								<h2 class="onovo-title-2">
+									<span> Send Us Your <br>
+										<strong>Bright Ideas</strong>
+									</span>
+								</h2>
+							</div>
+
+							<!-- Text -->
+							<div class="onovo-cta-text get-in-touch">
+								<a href="mailto:Info@onestopaccountingshop.com"
+									target="_blank">Info@onestopaccountingshop.com</a>
+								<p>New Jersey, <br /> United States. </p>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+							<!-- Social -->
+							<div class="onovo-cta-social">
+								<div class="image" style="background-image: url(assets/anImages/cta-circle2.png);">
+									<div class="cta-img-circle img-circle--1"></div>
+									<div class="cta-img-circle img-circle--2"></div>
+									<div class="cta-img-circle img-circle--3"></div>
+								</div>
+								<div class="desc">
+									<ul>
+										<li>
+											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn"
+												href="http://facebook.com" target="_blank">
+												<i aria-hidden="true" class="fab fa-facebook-f"></i>
+												<span> Facebook </span>
+											</a>
+										</li>
+										<li>
+											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn"
+												href="http://instagram.com" target="_blank">
+												<i aria-hidden="true" class="fab fa-instagram"></i>
+												<span> Instagram </span>
+											</a>
+										</li>
+										<li>
+											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn"
+												href="http://twitter.com" target="_blank">
+												<i aria-hidden="true" class="fab fa-twitter"></i>
+												<span> Twitter </span>
+											</a>
+										</li>
+										<li>
+											<a class="onovo-btn btn--white btn--large btn--icon onovo-hover-btn"
+												href="http://linkedin.com" target="_blank">
+												<i aria-hidden="true" class="fab fa-linkedin-in"></i>
+												<span> LinkedIn </span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Onovo Blog -->
+			<section class="onovo-section gap-top-140 gap-bottom-140">
+				<div class="container">
+
+					<!-- Heading -->
+					<div class="onovo-heading align-center gap-bottom-40">
+						<div class="onovo-subtitle-1">
+							<span> News &amp; Blog </span>
+						</div>
+						<h2 class="onovo-title-2">
+							<span> Insights, Thoughts, Industry <br>Trends, Marketing Tips </span>
+						</h2>
+					</div>
+
+					<!-- Blog items -->
+					<div class="row">
+
+						<!--blog item-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+							<div class="onovo-blog-item">
+								<div class="image" data-onovo-overlay data-onovo-scroll>
+									<a href="blog-detail.html">
+										<img decoding="async" src="assets/anImages/raisemoney.jpg" width="400"
+											height="240" alt="Usability Secrets to Create Interfaces" />
+									</a>
+								</div>
+								<div class="desc">
+									<div class="info">
+										<div class="date">March 25, 2023</div>Branding
+									</div>
+									<h5 class="title">
+										<a href="blog-detail.html">
+											<span>Usability Secrets to Create Interfaces</span>
+										</a>
+									</h5>
+									<div class="onovo-text">
+										<div>
+											<p>Ambleton: Behind the Branding of High Calgary&#8217;s Community Most
+												innovative and successful builders and real estate&#8230; <br />
+												<a href="blog-detail.html" class="onovo-btn onovo-hover-btn">
+													<span>Read more</span>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--blog item-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+							<div class="onovo-blog-item">
+								<div class="image" data-onovo-overlay data-onovo-scroll>
+									<a href="blog-detail.html">
+										<img decoding="async" src="assets/anImages/whichaccoutnisright.avif" width="400"
+											height="240" alt="The Main Thing For The Web Designer" />
+									</a>
+								</div>
+								<div class="desc">
+									<div class="info">
+										<div class="date">March 18, 2023</div>Design
+									</div>
+									<h5 class="title">
+										<a href="blog-detail.html">
+											<span>The Main Thing For The Web Designer</span>
+										</a>
+									</h5>
+									<div class="onovo-text">
+										<div>
+											<p>Ambleton: Behind the Branding of High Calgary&#8217;s Community Most
+												innovative and successful builders and real estate&#8230; <br />
+												<a href="blog-detail.html" class="onovo-btn onovo-hover-btn">
+													<span>Read more</span>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--blog item-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+							<div class="onovo-blog-item">
+								<div class="image" data-onovo-overlay data-onovo-scroll>
+									<a href="blog-detail.html">
+										<img decoding="async" src="assets/anImages/whycreateaccount.png" width="400"
+											height="240" alt="How to Do Your First Business Project" />
+									</a>
+								</div>
+								<div class="desc">
+									<div class="info">
+										<div class="date">March 10, 2023</div>News
+									</div>
+									<h5 class="title">
+										<a href="blog-detail.html">
+											<span>How to Do Your First Business Project</span>
+										</a>
+									</h5>
+									<div class="onovo-text">
+										<div>
+											<p>Ambleton: Behind the Branding of High Calgary&#8217;s Community Most
+												innovative and successful builders and real estate&#8230; <br />
+												<a href="blog-detail.html" class="onovo-btn onovo-hover-btn">
+													<span>Read more</span>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Button -->
+					<div class="align-center">
+						<a class="onovo-btn onovo-hover-btn" href="blog.html">
+							<i class="arrow">
+								<span></span>
+							</i>
+							<span> View All Posts </span>
+						</a>
+					</div>
+
+				</div>
+			</section>
+
+
+
+		</div>
+
+		<!-- Footer -->
+		<footer class="onovo-footer footer--dark">
+			<div class="footer--default">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+
+							<!-- Description -->
+							<div class="onovo-text onovo-text-white">
+								<h5>Information</h5>
+								<p style="opacity: 0.6;">From the moment our company was founded, we have helped our
+									clients find exceptional solutions <strong>for their businesses</strong>. </p>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+
+							<!-- Description -->
+							<div class="onovo-text onovo-text-white">
+								<h5>Get in Touch</h5>
+								<p style="opacity: 0.6;">Baird House, 15-17 St Cross St <br />London EC1N 8UW </p>
+								<p style="opacity: 0.6;">
+									<a href="tel:+10204302973" class="onovo-lnk lnk--white" target="_blank">+ 1 (020)
+										430 2973</a><br>
+									<a href="mailto:username@domain.com" class="onovo-lnk lnk--white"
+										target="_blank">username@domain.com</a>
+								</p>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+
+							<!-- Gallery items -->
+							<div class="row">
+
+								<!--gallery item-->
+								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+									<figure class="gallery-item">
+										<a href='assets/images/post5.jpg'>
+											<img src="assets/images/post5-1024x683.jpg" alt="" />
+										</a>
+									</figure>
+								</div>
+
+								<!--gallery item-->
+								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+									<figure class="gallery-item">
+										<a href='assets/images/post4.jpg'>
+											<img src="assets/images/post4-1024x683.jpg" alt="" />
+										</a>
+									</figure>
+								</div>
+
+								<!--gallery item-->
+								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+									<figure class="gallery-item">
+										<a href='assets/images/post3.jpg'>
+											<img src="assets/images/post3-1024x683.jpg" alt="" />
+										</a>
+									</figure>
+								</div>
+
+								<!--gallery item-->
+								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+									<figure class="gallery-item">
+										<a href='assets/images/post4.jpg'>
+											<img src="assets/images/post4-1024x683.jpg" alt="" />
+										</a>
+									</figure>
+								</div>
+
+								<!--gallery item-->
+								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+									<figure class="gallery-item">
+										<a href='assets/images/post1.jpg'>
+											<img src="assets/images/post1-1024x683.jpg" alt="" />
+										</a>
+									</figure>
+								</div>
+
+								<!--gallery item-->
+								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+									<figure class="gallery-item">
+										<a href='assets/images/post6.jpg'>
+											<img src="assets/images/post6-1024x683.jpg" alt="" />
+										</a>
+									</figure>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="separator"></div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
+
+							<!-- Copyright -->
+							<div class="copyright onovo-text-white">
+								© 2023 OSAS by <a href="https://bslthemes.com" target="blank"
+									class="onovo-lnk lnk--white">SEG Team</a>. All rights reserved.
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-right">
+
+							<!-- Social-->
+							<div class="onovo-social-1 onovo-social-active">
+								<ul>
+									<li>
+										<a class="onovo-social-link onovo-hover-2" href="http://twitter.com"
+											title="Twitter" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a class="onovo-social-link onovo-hover-2" href="http://linkedin.com"
+											title="LinkedIn" target="_blank">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a class="onovo-social-link onovo-hover-2" href="http://dribbble.com"
+											title="Dribbble" target="_blank">
+											<i class="fab fa-behance"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/swiper.js"></script>
+	<script src="assets/js/splitting.js"></script>
+	<script src="assets/js/scroll-out.js"></script>
+	<script src="assets/js/jquery.pagepiling.js"></script>
+	<script src="assets/js/jquery.easy_number_animate.js"></script>
+	<script src="assets/js/magnific-popup.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/common.js"></script>
+	<script src="assets/js/antormodified.js"></script>
+
+</body>
+
 </html>
