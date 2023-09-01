@@ -147,6 +147,11 @@ h2.onovo-title-2{
         margin-bottom: 0;
     }
 
+    p.a-title{
+        right:0;
+        width: 100%;
+    }
+
     .onovo-play-btn{
         display: none;
     }
