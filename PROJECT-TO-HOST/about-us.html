@@ -93,6 +93,16 @@
 			margin: 10px;
 			margin-right: 20px;
 		}
+
+
+		@media screen and (max-width:550px) {
+			#options {
+				grid-template-columns: 1fr;
+			}
+			.float-img {
+				width: 50vw;
+			}
+		}
 	</style>
 
 </head>
@@ -542,10 +552,10 @@
 
 		let observer = new IntersectionObserver((entries) => {
 			if (entries[0].isIntersecting) {
-				products.forEach(product => product.style.width="100%")
+				products.forEach(product => product.style.width = "100%")
 
 			} else {
-				products.forEach(product => product.style.width="0%")
+				products.forEach(product => product.style.width = "0%")
 			}
 		});
 
