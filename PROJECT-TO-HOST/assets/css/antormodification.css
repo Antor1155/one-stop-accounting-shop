@@ -27,6 +27,10 @@
     transform: translate(-50%, -50%);
 }
 
+.onovo-hero .container {
+    padding-top: 45px;
+}
+
 .antor-h1 span{
     opacity: 0;
     display: block;
@@ -54,9 +58,11 @@
 p.a-title{
     position: absolute;
     font-size: 1.5rem;
-    bottom: 0;
-    right: 15%;
+    bottom: 35px;
+    right: 0;
     text-align: center;
+
+    width: 100vw;
 
     animation: blur-to-visible 1s .2s ease-out forwards;
 }
