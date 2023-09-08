@@ -59,10 +59,7 @@ p.a-title{
     position: absolute;
     font-size: 1.5rem;
     bottom: 35px;
-    right: 0;
-    text-align: center;
-
-    width: 100vw;
+    right: 15%;
 
     animation: blur-to-visible 1s .2s ease-out forwards;
 }
