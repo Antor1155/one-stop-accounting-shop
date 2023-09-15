@@ -2,6 +2,7 @@ window.onload = ()=>{
     document.getElementById("hide-on-load").style.opacity = "0"
 }
 
+// handle email submit for subscribe in home page 
 document.getElementById("subscriptionForm").addEventListener("submit", e =>{
     e.preventDefault()
     console.log(e.target.email.value)
@@ -13,9 +14,17 @@ popup.addEventListener("click", ()=>{
     popup.classList.toggle("hidden")
 })
 
-const indexBigForm = document.getElementById("index-big-form")
+// handle big-form on home page 
+document.getElementById("index-big-form").addEventListener("submit", e=>{
+    e.preventDefault()
+    const data = {name: e.target.name.value,
+                email: e.target.email.value,
+                phone: e.target.phone.value,
+                business: e.target.business.value,
+                dateTime: e.target.time.value,
+    }
 
-// indexBigForm.submit((e)=>{
-//     e.preventDefault()
-//     console.log(e.target)
-// })
+    e.target.name.value=""
+    popup.classList.toggle("hidden")
+
+})
