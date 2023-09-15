@@ -24,7 +24,7 @@ document.getElementById("index-big-form").addEventListener("submit", e=>{
                 dateTime: e.target.time.value,
     }
 
-    e.target.name.value=""
+    // e.target.name.value=""
     popup.classList.toggle("hidden")
 
 })
