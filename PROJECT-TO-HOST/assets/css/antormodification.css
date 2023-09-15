@@ -158,11 +158,6 @@ h2.onovo-title-2{
 }
 
 
-/* more about us or this kind on button  */
-.onovo-hover-btn::after, .onovo-btn .arrow::before{
-    background-color: var(--antor-theme-color);
-}
-
 .form-container{
     max-width: 700px;
     margin: auto;
@@ -190,6 +185,57 @@ h2.onovo-title-2{
 .form-container form button:hover{
     background-color: var(--antor-theme-color);
     color: black;
+}
+
+
+/* pop up styles  */
+#submit-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.679);
+}
+#submit-popup.hidden{
+    display: none;
+}
+
+.popup-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    max-width: 700px;
+    text-align: justify;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.popup-content > div{
+    display: flex;
+    justify-content: flex-end;
+}
+.popup-content button{
+    background-color: transparent;
+    border: 1px solid rgb(29, 28, 28);
+    padding:0 .7rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+.popup-content button:hover{
+    background-color: var(--antor-theme-color);
+    color: white;
+}
+
+
+
+/* more about us or this kind on button  */
+.onovo-hover-btn::after, .onovo-btn .arrow::before{
+    background-color: var(--antor-theme-color);
 }
 
 @media only screen and (max-width: 500px) {
