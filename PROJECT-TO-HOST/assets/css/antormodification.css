@@ -281,6 +281,9 @@ h2.onovo-title-2{
     .form-container{
         padding: 15px;
     }
-
+    .popup-content{
+        width: 100%;
+        max-width: 100vw;
+    }
 
 }
