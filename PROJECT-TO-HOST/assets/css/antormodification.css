@@ -163,6 +163,35 @@ h2.onovo-title-2{
     background-color: var(--antor-theme-color);
 }
 
+.form-container{
+    max-width: 700px;
+    margin: auto;
+}
+.form-container form label{
+    padding: 0;
+}
+.form-container form input{
+    margin-bottom: 25px;
+}
+#time{
+    border: 1px solid #B2B2B2;
+    border-radius: 20px;
+    display: block;
+    height: 50px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.form-container form button{
+    display: block;
+    margin: auto;
+}
+.form-container form button:hover{
+    background-color: var(--antor-theme-color);
+    color: black;
+}
+
 @media only screen and (max-width: 500px) {
 
     p.a-title{
