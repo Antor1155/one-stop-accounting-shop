@@ -126,9 +126,13 @@ h2.onovo-title-2{
 .owner{
     width: 90vw;
     max-width: 1440px;
-    margin: auto;
-    text-align: center;
-    
+    margin: auto; 
+    font-size: 1.3rem;
+}
+
+#owner-sectino-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .owner img{
@@ -184,6 +188,9 @@ h2.onovo-title-2{
         flex-direction: column;
     }
 
+    #owner-sectino-content{
+        grid-template-columns: 1fr;
+    }
     .owner img{
         width: 100%;
     }
