@@ -278,5 +278,9 @@ h2.onovo-title-2{
         align-items: center;
     }
 
+    .form-container{
+        padding: 15px;
+    }
+
 
 }
