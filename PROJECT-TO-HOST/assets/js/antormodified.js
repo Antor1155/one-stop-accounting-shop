@@ -1,12 +1,35 @@
+// url for the backend
+
+const url = "http://localhost:5000/formdata/"
+
 window.onload = ()=>{
     document.getElementById("hide-on-load").style.opacity = "0"
 }
 
+
 // handle email submit for subscribe in home page 
 document.getElementById("subscriptionForm").addEventListener("submit", e =>{
     e.preventDefault()
-    console.log(e.target.email.value)
+    const data ={
+        email: e.target.email.value
+    } 
+    console.log(data)
     
+    fetch(`${url}subscription`, {
+        method:"POST",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res =>{
+        
+        e.target.reset()
+    })
+    .catch(error => {
+        console.log(error)
+        e.target.reset()
+    })
 })
 
 const popup = document.getElementById("submit-popup")
@@ -24,7 +47,22 @@ document.getElementById("index-big-form").addEventListener("submit", e=>{
                 dateTime: e.target.time.value,
     }
 
-    // e.target.name.value=""
-    popup.classList.toggle("hidden")
+    popup.classList.toggle("hidden");
+
+    fetch(`${url}indexbig`, {
+        method:"POST",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res =>{
+        
+        e.target.reset()
+    })
+    .catch(error => {
+        console.log(error)
+        e.target.reset()
+    })
 
 })
