@@ -1,6 +1,8 @@
 // url for the backend
 
-const url = "http://localhost:5000/formdata/"
+// const url = "http://localhost:5000/formdata/"
+const url = "https://us-central1-one-stop-accounting-published.cloudfunctions.net/app/formdata/"
+
 
 window.onload = ()=>{
     document.getElementById("hide-on-load").style.opacity = "0"
