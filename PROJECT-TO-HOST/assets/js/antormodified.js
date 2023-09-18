@@ -13,7 +13,6 @@ document.getElementById("subscriptionForm").addEventListener("submit", e =>{
     const data ={
         email: e.target.email.value
     } 
-    console.log(data)
     
     fetch(`${url}subscription`, {
         method:"POST",
