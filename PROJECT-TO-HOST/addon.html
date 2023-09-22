@@ -46,11 +46,12 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        .onovo-hero{
+        .onovo-hero {
             height: auto;
             min-height: 100vh;
             padding-bottom: 20px;
         }
+
         .onovo-hero .container {
             display: block;
             padding-top: 60px;
@@ -74,40 +75,68 @@
             font-size: 1rem;
         }
 
-        .ad-section{
+        .ad-section {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
+            align-items: center;
         }
 
-        .owner-text{
+        .owner-text {
             background-color: #34373880;
             margin: 0px 0px 10px 50px;
             padding: 10px;
             border-radius: 5px;
         }
-        .owner-text img{
+
+        .owner-text img {
             float: left;
             max-width: 250px;
             margin: 25px 20px 0 0;
             border-radius: 5px;
         }
-        .owner-text p{
+
+        .owner-text p {
             font-size: .8rem;
         }
 
-        #cform input{
+        #cform input {
             height: auto;
             padding-top: 5px;
         }
 
-        #cform textarea{
+        #cform textarea {
             height: auto !important;
         }
 
-        #cform button{
+        #cform button {
             display: block;
             margin: auto;
+        }
+
+        @media screen and (max-width:550px) {
+            .onovo-hero .container {
+                padding-top: 90px;
+            }
+
+            .antor-h1 span {
+                font-size: 1.5rem;
+            }
+
+            .ad-section {
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+            }
+
+            .owner-text {
+                margin: 0;
+            }
+
+            .owner-text img {
+                float: none;
+                display: block;
+                margin: auto;
+            }
         }
     </style>
 
@@ -268,7 +297,8 @@
 
                                 <img src="./assets/anImages/ownerTahsin.jpg" alt="owner image">
 
-                                <p class="onovo-text-white"> Hello! My name is Tahsin Sikdar. I am the owner of One Stop Accounting Shop. I
+                                <p class="onovo-text-white"> Hello! My name is Tahsin Sikdar. I am the owner of One Stop
+                                    Accounting Shop. I
                                     created this
                                     company after working in typical CPA firms for about 8 years. I saw how costly it
                                     can be for
