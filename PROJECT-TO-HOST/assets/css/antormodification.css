@@ -123,6 +123,14 @@ h2.onovo-title-2{
     background-color: var(--antor-theme-color);
 }
 
+/* review section buttons  */
+.js-reviews-carousel-navs {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    font-size: 0;
+}
+
 .owner{
     width: 90vw;
     max-width: 1440px;
