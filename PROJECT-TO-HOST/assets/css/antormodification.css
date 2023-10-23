@@ -306,9 +306,4 @@ h2.onovo-title-2{
         max-width: 100vw;
     }
 
-    /* this code is only for the addon.html page  */
-    #adds-owner-text, .addon-display-none{
-        display: none;
-    }
-
 }

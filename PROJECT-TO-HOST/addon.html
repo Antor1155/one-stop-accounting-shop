@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/antormodification.css">
 
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -78,8 +79,12 @@
         .ad-section {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            align-items: center;
+            margin-top: 60px;
+
+            & h5{
+                margin-top: 60px;
+            }
+
         }
 
         .owner-text {
@@ -124,8 +129,8 @@
             }
 
             .ad-section {
-                grid-template-columns: repeat(1, 1fr);
-                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             .owner-text {
@@ -136,6 +141,15 @@
                 float: none;
                 display: block;
                 margin: auto;
+            }
+
+            /* this code is only for the addon.html page  */
+            #adds-owner-text, .addon-display-none{
+                display: none;
+            }
+
+            .js-reviews-carousel-navs{
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -267,7 +281,7 @@
                     <div class="ad-section">
                         <!-- Form -->
                         <div class="onovo-form" style="z-index: 2;">
-                            <h5 class="onovo-text-white text-center">Schedule you’re free tax, bookkeeping or accounting consultation now</h5>
+                            
                             <form id="cform" class="cform">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -299,6 +313,8 @@
                                     </div>
                                 </div>
                             </form>
+
+                            <h5 class="onovo-text-white text-center">Schedule you’re free tax, bookkeeping or accounting consultation now</h5>
 
                         </div>
 
