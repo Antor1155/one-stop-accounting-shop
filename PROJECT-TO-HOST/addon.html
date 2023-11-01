@@ -141,26 +141,48 @@
             }
 
             /* this code is only for the addon.html page  */
-            #adds-owner-text, .addon-display-none{
+            #adds-owner-text,
+            .addon-display-none {
                 display: none;
             }
 
-            .js-reviews-carousel-navs{
+            .js-reviews-carousel-navs {
                 margin-bottom: 10px;
             }
         }
     </style>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4PVFQ2PRD">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4PVFQ2PRD">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-N4PVFQ2PRD');
-</script>
+        gtag('config', 'G-N4PVFQ2PRD');
+    </script>
+
+    <!-- meta pixel  -->
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1073676910298402');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1073676910298402&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
 </head>
 
@@ -279,9 +301,10 @@
                         <!-- Form -->
                         <div class="onovo-form" style="z-index: 2;">
 
-                            <h5 class="onovo-text-white text-center">Get 20% off monthly fees for the first 3 months when you schedule your free tax, bookkeeping or accounting consultation</h5>
-                            
-                            
+                            <h5 class="onovo-text-white text-center">Get 20% off monthly fees for the first 3 months
+                                when you schedule your free tax, bookkeeping or accounting consultation</h5>
+
+
                             <form id="cform" class="cform">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -342,276 +365,297 @@
                 </div>
             </section>
 
-			<!-- Onovo Reviews -->
-			<section id="reviews" class="onovo-section gap-bottom-40 gap-top-40">
-				<div class="container">
+            <!-- Onovo Reviews -->
+            <section id="reviews" class="onovo-section gap-bottom-40 gap-top-40">
+                <div class="container">
 
-					<!-- Reviews -->
-					<div class="onovo-reviews">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <!-- Reviews -->
+                    <div class="onovo-reviews">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 
-								<!-- Heading -->
-								<div class="onovo-reviews-titles">
-									<h2 class="onovo-title-2">
-										<span data-splitting data-onovo-scroll> Testimonials </span>
-									</h2>
-									<div class="onovo-reviews-summary">
-										<span class="label onovo-text-black">
-											<span data-splitting data-onovo-scroll> 5 </span>
-										</span>
-										<span class="onovo-stars">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-										</span>
-										<span class="label">
-											<span data-splitting data-onovo-scroll> Rating from all Client's </span>
-										</span>
-									</div>
-								</div>
+                                <!-- Heading -->
+                                <div class="onovo-reviews-titles">
+                                    <h2 class="onovo-title-2">
+                                        <span data-splitting data-onovo-scroll> Testimonials </span>
+                                    </h2>
+                                    <div class="onovo-reviews-summary">
+                                        <span class="label onovo-text-black">
+                                            <span data-splitting data-onovo-scroll> 5 </span>
+                                        </span>
+                                        <span class="onovo-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="label">
+                                            <span data-splitting data-onovo-scroll> Rating from all Client's </span>
+                                        </span>
+                                    </div>
+                                </div>
 
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 
-								<!-- Reviews swiper -->
-								<div class="onovo-reviews-carousel">
-									<div class="swiper-container js-reviews-carousel" data-loop="false">
-										<div class="swiper-wrapper">
+                                <!-- Reviews swiper -->
+                                <div class="onovo-reviews-carousel">
+                                    <div class="swiper-container js-reviews-carousel" data-loop="false">
+                                        <div class="swiper-wrapper">
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Tahsin is great and easy to work with. Thank you one stop accounting shop for your outstanding work. ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Sadi Sikdar </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Tahsin is great and easy to work with. Thank you one stop
+                                                            accounting shop for your outstanding work. ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Sadi Sikdar </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Absolutely amazing! I have worked with the owner of One Stop Accounting Shop for some time and I can tell you I have never been happier. She takes care of my books and all my filings for me. If there is something that I am not aware, she lets me know immediately. I never have to worry about not being in compliance, or my financials, books, or returns. One Stop Accounting Shop is unlike any other firm. 100% would recommend!! ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Jessica Matano </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Absolutely amazing! I have worked with the owner of One
+                                                            Stop Accounting Shop for some time and I can tell you I have
+                                                            never been happier. She takes care of my books and all my
+                                                            filings for me. If there is something that I am not aware,
+                                                            she lets me know immediately. I never have to worry about
+                                                            not being in compliance, or my financials, books, or
+                                                            returns. One Stop Accounting Shop is unlike any other firm.
+                                                            100% would recommend!! ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Jessica Matano </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Tahsin is very reliable. She always does an outstanding job and I know my business is in good hands with her!”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> taufiq islam </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Tahsin is very reliable. She always does an outstanding job
+                                                            and I know my business is in good hands with her!”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> taufiq islam </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ The service at one stop accounting shop is exceptional. They really care about the customer and listened to my concerns and what I needed. From working with other accountants, what sets them apart is that they are not only very knowledgeable, but also very communicative and keep me updated every step of the way. Great service! ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> 0nazrin </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ The service at one stop accounting shop is exceptional.
+                                                            They really care about the customer and listened to my
+                                                            concerns and what I needed. From working with other
+                                                            accountants, what sets them apart is that they are not only
+                                                            very knowledgeable, but also very communicative and keep me
+                                                            updated every step of the way. Great service! ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> 0nazrin </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Tahsin is very friendly and sweet. She is very timely and responsive. I’m happy with the work she’s done so far. ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Sofia Menendez </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Tahsin is very friendly and sweet. She is very timely and
+                                                            responsive. I’m happy with the work she’s done so far. ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Sofia Menendez </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Great Experience ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Tahmidul Islam </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Great Experience ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Tahmidul Islam </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Amazing service! ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Glaricel Caminero </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Amazing service! ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Glaricel Caminero </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ Great Experience ! ”
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Lovely Iqbal </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ Great Experience ! ”
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Lovely Iqbal </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-											<!--slide-->
-											<div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
-												<div class="text">
-													<div data-splitting>
-														<p>“ We are launching a new restaurant.   We thought we were doing what we needed to set up our company.   Boy were we wrong!  We were looking for a new accountant and Tahsin reached out to us.   She immediately pointed out that we were not properly registered in NJ -- and we were not registered with the state for sales tax.  OMG!!!   It is really hard starting a business on your own.   Tahsin a godsend!!! ”
-														<br>
-														
-														<br>
-														Can't recommend her highly enough.
-														</p>
-													</div>
-												</div>
-												<h5 class="title">
-													<span data-splitting> Nicole Jones </span>
-												</h5>
-												<div class="subtitle">
-													<span data-splitting> Google Review </span>
-												</div>
-												<div class="onovo-stars stars--small">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-											</div>
+                                            <!--slide-->
+                                            <div class="swiper-slide onovo-reviews-item" data-swiper-autoplay>
+                                                <div class="text">
+                                                    <div data-splitting>
+                                                        <p>“ We are launching a new restaurant. We thought we were doing
+                                                            what we needed to set up our company. Boy were we wrong! We
+                                                            were looking for a new accountant and Tahsin reached out to
+                                                            us. She immediately pointed out that we were not properly
+                                                            registered in NJ -- and we were not registered with the
+                                                            state for sales tax. OMG!!! It is really hard starting a
+                                                            business on your own. Tahsin a godsend!!! ”
+                                                            <br>
 
-										</div>
-									</div>
+                                                            <br>
+                                                            Can't recommend her highly enough.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="title">
+                                                    <span data-splitting> Nicole Jones </span>
+                                                </h5>
+                                                <div class="subtitle">
+                                                    <span data-splitting> Google Review </span>
+                                                </div>
+                                                <div class="onovo-stars stars--small">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
 
-									<!--navs-->
-									<div class="js-reviews-carousel-navs">
-										<div class="onovo-prev js-reviews-carousel-prev onovo-hover-2">
-											<i></i>
-										</div>
-										<div class="onovo-next js-reviews-carousel-next onovo-hover-2">
-											<i></i>
-										</div>
-									</div>
+                                        </div>
+                                    </div>
 
-								</div>
-							</div>
-						</div>
-					</div>
+                                    <!--navs-->
+                                    <div class="js-reviews-carousel-navs">
+                                        <div class="onovo-prev js-reviews-carousel-prev onovo-hover-2">
+                                            <i></i>
+                                        </div>
+                                        <div class="onovo-next js-reviews-carousel-next onovo-hover-2">
+                                            <i></i>
+                                        </div>
+                                    </div>
 
-				</div>
-			</section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
             <!-- Onovo About -->
             <section class="onovo-section gap-top-100 gap-bottom-100">
@@ -894,150 +938,152 @@
         </div>
 
         <!-- Footer -->
-		<footer class="onovo-footer footer--dark">
-			<div class="footer--default">
-				<div class="container">
+        <footer class="onovo-footer footer--dark">
+            <div class="footer--default">
+                <div class="container">
 
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
 
-							<!-- Description -->
-							<div class="onovo-text onovo-text-white">
-								<h5>Information</h5>
-								<p style="opacity: 0.6;">From the moment our company was founded, we have helped our
-									clients find exceptional solutions <strong>for their businesses</strong>. </p>
-							</div>
+                            <!-- Description -->
+                            <div class="onovo-text onovo-text-white">
+                                <h5>Information</h5>
+                                <p style="opacity: 0.6;">From the moment our company was founded, we have helped our
+                                    clients find exceptional solutions <strong>for their businesses</strong>. </p>
+                            </div>
 
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
 
-							<!-- Description -->
-							<div class="onovo-text onovo-text-white">
-								<h5>Get in Touch</h5>
-								<p style="opacity: 0.6;">
-									Servicing the Tri state area <br /> NY, NJ, CT, PA
-									<br />and Nationwide
-								</p>
-								<p style="opacity: 0.6;">
-									<a href="tel:9732008945" class="onovo-lnk lnk--white" target="_blank">(973)
-										200-8945</a><br>
-									<a href="tel:8623579431" class="onovo-lnk lnk--white" target="_blank">(862)
-										357-9431</a><br>
+                            <!-- Description -->
+                            <div class="onovo-text onovo-text-white">
+                                <h5>Get in Touch</h5>
+                                <p style="opacity: 0.6;">
+                                    Servicing the Tri state area <br /> NY, NJ, CT, PA
+                                    <br />and Nationwide
+                                </p>
+                                <p style="opacity: 0.6;">
+                                    <a href="tel:9732008945" class="onovo-lnk lnk--white" target="_blank">(973)
+                                        200-8945</a><br>
+                                    <a href="tel:8623579431" class="onovo-lnk lnk--white" target="_blank">(862)
+                                        357-9431</a><br>
 
-									<a href="mailto:Info@onestopaccountingshop.com" class="onovo-lnk lnk--white"
-										target="_blank">Info@onestopaccountingshop.com</a>
-								</p>
-							</div>
+                                    <a href="mailto:Info@onestopaccountingshop.com" class="onovo-lnk lnk--white"
+                                        target="_blank">Info@onestopaccountingshop.com</a>
+                                </p>
+                            </div>
 
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
 
-							<!-- Gallery items -->
-							<div class="row">
+                            <!-- Gallery items -->
+                            <div class="row">
 
-								<!--gallery item-->
-								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-									<figure class="gallery-item">
-										<a href='assets/anImages/accounting.png'>
-											<img src="assets/anImages/accounting.png" alt="" />
-										</a>
-									</figure>
-								</div>
+                                <!--gallery item-->
+                                <div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <figure class="gallery-item">
+                                        <a href='assets/anImages/accounting.png'>
+                                            <img src="assets/anImages/accounting.png" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
 
-								<!--gallery item-->
-								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-									<figure class="gallery-item">
-										<a href='assets/anImages/advisory.jpg'>
-											<img src="assets/anImages/advisory.jpg" alt="" />
-										</a>
-									</figure>
-								</div>
+                                <!--gallery item-->
+                                <div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <figure class="gallery-item">
+                                        <a href='assets/anImages/advisory.jpg'>
+                                            <img src="assets/anImages/advisory.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
 
-								<!--gallery item-->
-								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-									<figure class="gallery-item">
-										<a href='assets/anImages/management.jpg'>
-											<img src="assets/anImages/management.jpg" alt="" />
-										</a>
-									</figure>
-								</div>
+                                <!--gallery item-->
+                                <div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <figure class="gallery-item">
+                                        <a href='assets/anImages/management.jpg'>
+                                            <img src="assets/anImages/management.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
 
-								<!--gallery item-->
-								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-									<figure class="gallery-item">
-										<a href='assets/anImages/raisemoney.jpg'>
-											<img src="assets/anImages/raisemoney.jpg" alt="" />
-										</a>
-									</figure>
-								</div>
+                                <!--gallery item-->
+                                <div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <figure class="gallery-item">
+                                        <a href='assets/anImages/raisemoney.jpg'>
+                                            <img src="assets/anImages/raisemoney.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
 
-								<!--gallery item-->
-								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-									<figure class="gallery-item">
-										<a href='assets/anImages/team.webp'>
-											<img src="assets/anImages/team.webp" alt="" />
-										</a>
-									</figure>
-								</div>
+                                <!--gallery item-->
+                                <div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <figure class="gallery-item">
+                                        <a href='assets/anImages/team.webp'>
+                                            <img src="assets/anImages/team.webp" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
 
-								<!--gallery item-->
-								<div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-									<figure class="gallery-item">
-										<a href='assets/anImages/whycreateaccount.png'>
-											<img src="assets/anImages/whycreateaccount.png" alt="" />
-										</a>
-									</figure>
-								</div>
+                                <!--gallery item-->
+                                <div class="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <figure class="gallery-item">
+                                        <a href='assets/anImages/whycreateaccount.png'>
+                                            <img src="assets/anImages/whycreateaccount.png" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
 
-							</div>
+                            </div>
 
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-					<div class="separator"></div>
+                    <div class="separator"></div>
 
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
 
-							<!-- Copyright -->
-							<div class="copyright onovo-text-white">
-								© 2023 OSAS by <a href="https://socialengagementgroup.com/" target="blank"
-									class="onovo-lnk lnk--white">SEG Team</a>. All rights reserved.
-							</div>
+                            <!-- Copyright -->
+                            <div class="copyright onovo-text-white">
+                                © 2023 OSAS by <a href="https://socialengagementgroup.com/" target="blank"
+                                    class="onovo-lnk lnk--white">SEG Team</a>. All rights reserved.
+                            </div>
 
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-right">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-right">
 
-							<!-- Social-->
-							<div class="onovo-social-1 onovo-social-active">
-								<ul>
-									<li>
-										<a class="onovo-social-link onovo-hover-2" href="https://www.facebook.com/OneStopAccountingShop"
-											title="facebook" target="_blank">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a class="onovo-social-link onovo-hover-2" href="http://linkedin.com"
-											title="LinkedIn" target="_blank">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a class="onovo-social-link onovo-hover-2" href="https://instagram.com/onestopaccountingshop?igshid=MzRlODBiNWFlZA=="
-											title="instagram" target="_blank">
-											<i class="fab fa-instagram"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
+                            <!-- Social-->
+                            <div class="onovo-social-1 onovo-social-active">
+                                <ul>
+                                    <li>
+                                        <a class="onovo-social-link onovo-hover-2"
+                                            href="https://www.facebook.com/OneStopAccountingShop" title="facebook"
+                                            target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="onovo-social-link onovo-hover-2" href="http://linkedin.com"
+                                            title="LinkedIn" target="_blank">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="onovo-social-link onovo-hover-2"
+                                            href="https://instagram.com/onestopaccountingshop?igshid=MzRlODBiNWFlZA=="
+                                            title="instagram" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-				</div>
-			</div>
-		</footer>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
