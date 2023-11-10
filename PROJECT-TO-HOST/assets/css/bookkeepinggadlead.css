@@ -139,3 +139,72 @@ form.form-section {
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width: 550px) {
+    .onovo-hero{
+        display: block;
+        height: auto;
+        background:#52383f radial-gradient(circle at 138% 59%, rgba(238, 132, 67, 0.92) 0%, #D8D2CE 59%);
+    }
+    .hero-contents{
+        flex-direction: column;
+    }
+
+    .main-content{
+        order: 2;
+        --webkit-order: 2;
+
+        width: 100%;
+        padding: 10px;
+
+        gap: 50px;
+    }
+
+    .addon-title{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    br{
+        display: none;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+
+        margin-bottom: 50px;
+    }
+
+    form.form-section{
+        order: 3;
+        --webkit-order: 3;
+
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        background-color: rgba(217, 217, 217, 0.24);
+
+        & input, textarea{
+            margin-bottom: 10px;
+        }
+    }
+
+    .logos{
+        order : 1;
+        --webkit-order: 1;
+
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: -5px;
+
+        & img{
+            width: 30%;
+        }
+    }
+}
