@@ -1,0 +1,32 @@
+
+.onovo-header {
+    background-color: #555;
+}
+
+.onovo-hero {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+
+    background: radial-gradient(circle at 84% 35%, rgba(238, 132, 67, 0.92) 0%, #D8D2CE 62%);
+    ;
+}
+
+.addon-title {
+    color: #0F0606;
+    /* font-family: var(--font-inter); */
+
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+    & .bookkeeping {
+        color: #0F0606;
+        font-family: Sansita One;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
+    }
+}

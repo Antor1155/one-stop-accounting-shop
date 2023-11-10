@@ -1,15 +1,22 @@
-:root{
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+One:wght@400&display=swap");
+
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-sansita-one: "Sansita One";
     /* --antor-theme-color:  #3b879d; */
     /* --antor-theme-color:  #D8FF36; */
-    --antor-theme-color:  #FF6000;
+    --antor-theme-color: #FF6000;
 }
 
 @keyframes blur-to-visible {
-    from{
+    from {
         transform: translateY(100%);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
@@ -31,31 +38,34 @@
     padding-top: 45px;
 }
 
-.antor-h1 span{
+.antor-h1 span {
     opacity: 0;
     display: block;
     position: relative;
     font-family: 'Playfair Display', serif;
 }
 
-.antor-h1 span::first-letter{
-    color:var(--antor-theme-color)
+.antor-h1 span::first-letter {
+    color: var(--antor-theme-color)
 }
 
-.antor-h1 span:nth-child(1){
+.antor-h1 span:nth-child(1) {
     animation: blur-to-visible 1s .1s ease-out forwards;
 }
-.antor-h1 span:nth-child(2){
+
+.antor-h1 span:nth-child(2) {
     animation: blur-to-visible 1s .2s ease-out forwards;
 }
-.antor-h1 span:nth-child(3){
+
+.antor-h1 span:nth-child(3) {
     animation: blur-to-visible 1s .3s ease-out forwards;
 }
-.antor-h1 span:nth-child(4){
+
+.antor-h1 span:nth-child(4) {
     animation: blur-to-visible 1s .4s ease-out forwards;
 }
 
-p.a-title{
+p.a-title {
     position: absolute;
     font-size: 1.5rem;
     bottom: 35px;
@@ -73,33 +83,33 @@ p.a-title{
 .onovo-logo-image {
     border-radius: 50%;
     overflow: hidden;
-} 
+}
 
-.h-second{
+.h-second {
     font-size: 7vw;
     display: block;
 }
 
-.sep-img{
+.sep-img {
     background-size: auto;
 }
 
-h5.onovo-title-3{
+h5.onovo-title-3 {
     font-size: 2rem;
 }
 
-h2.onovo-title-2{
+h2.onovo-title-2 {
     margin-left: -5px;
 }
 
-.antor-h2{
+.antor-h2 {
     text-align: center;
     margin-bottom: 70px;
     color: var(--antor-theme-color);
-    text-shadow:1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
 }
 
-.onovo-service-grid-item .image img{
+.onovo-service-grid-item .image img {
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -108,17 +118,18 @@ h2.onovo-title-2{
 }
 
 
-.subscribe-form{
+.subscribe-form {
     display: flex;
     gap: 20px;
     width: 50%;
     margin: auto;
 }
 
-.subscribe-form button{
+.subscribe-form button {
     width: 200px;
 }
-.subscribe-form button:hover{
+
+.subscribe-form button:hover {
     color: black;
     background-color: var(--antor-theme-color);
 }
@@ -131,56 +142,59 @@ h2.onovo-title-2{
     font-size: 0;
 }
 
-.owner{
+.owner {
     width: 90vw;
     max-width: 1440px;
-    margin: auto; 
+    margin: auto;
     font-size: 1.3rem;
 }
 
-#owner-sectino-content{
+#owner-sectino-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    & p{
+    & p {
         font-size: 1rem;
     }
 }
 
-.owner img{
+.owner img {
     display: block;
     width: 60%;
     margin: auto;
     border-radius: 5px;
 }
 
-.onovo-cta-social{
+.onovo-cta-social {
     width: auto;
     height: auto;
-} 
+}
 
-.get-in-touch a{
+.get-in-touch a {
     font-size: 1.5rem;
     color: var(--antor-theme-color);
 }
 
-.get-in-touch p{
+.get-in-touch p {
     color: white;
     background-color: rgba(0, 0, 0, 0.188);
 }
 
 
-.form-container{
+.form-container {
     max-width: 700px;
     margin: auto;
 }
-.form-container form label{
+
+.form-container form label {
     padding: 0;
 }
-.form-container form input{
+
+.form-container form input {
     margin-bottom: 25px;
 }
-#time{
+
+#time {
     border: 1px solid #B2B2B2;
     border-radius: 20px;
     display: block;
@@ -190,18 +204,19 @@ h2.onovo-title-2{
     margin-bottom: 30px;
 }
 
-.form-container form button{
+.form-container form button {
     display: block;
     margin: auto;
 }
-.form-container form button:hover{
+
+.form-container form button:hover {
     background-color: var(--antor-theme-color);
     color: black;
 }
 
 
 /* pop up styles  */
-#submit-popup{
+#submit-popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -213,11 +228,12 @@ h2.onovo-title-2{
     background-color: rgba(0, 0, 0, 0.679);
     overflow-y: scroll;
 }
-#submit-popup.hidden{
+
+#submit-popup.hidden {
     display: none;
 }
 
-.popup-content{
+.popup-content {
     background-color: white;
     text-align: justify;
     padding: 25px;
@@ -227,18 +243,21 @@ h2.onovo-title-2{
     margin: auto;
 
 }
-.popup-content > div{
+
+.popup-content>div {
     display: flex;
     justify-content: flex-end;
 }
-.popup-content button{
+
+.popup-content button {
     background-color: transparent;
     border: 1px solid rgb(29, 28, 28);
-    padding:0 .7rem;
+    padding: 0 .7rem;
     border-radius: 50px;
     font-size: 1.3rem;
 }
-.popup-content button:hover{
+
+.popup-content button:hover {
     background-color: var(--antor-theme-color);
     color: white;
 }
@@ -246,51 +265,53 @@ h2.onovo-title-2{
 
 
 /* more about us or this kind on button  */
-.onovo-hover-btn::after, .onovo-btn .arrow::before{
+.onovo-hover-btn::after,
+.onovo-btn .arrow::before {
     background-color: var(--antor-theme-color);
 }
 
 @media only screen and (max-width: 500px) {
-    
-    p.a-title{
-        right:0;
+
+    p.a-title {
+        right: 0;
         width: 100%;
         text-align: center;
     }
 
-    .onovo-play-btn{
+    .onovo-play-btn {
         display: none;
     }
 
-    .center-on-mobile{
+    .center-on-mobile {
         text-align: center;
     }
 
-    .antor-h2{
+    .antor-h2 {
         margin-top: 3rem;
     }
 
-    .subscribe-form{
+    .subscribe-form {
         width: 100%;
         flex-direction: column;
     }
 
     /* review section buttons  */
-.js-reviews-carousel-navs {
-    position: relative;
-    left: 0;
-    bottom: 50%;
-    font-size: 0;
-}
+    .js-reviews-carousel-navs {
+        position: relative;
+        left: 0;
+        bottom: 50%;
+        font-size: 0;
+    }
 
-    #owner-sectino-content{
+    #owner-sectino-content {
         grid-template-columns: 1fr;
     }
-    .owner img{
+
+    .owner img {
         width: 100%;
     }
 
-    .get-in-touch a{
+    .get-in-touch a {
         font-size: 1rem;
     }
 
@@ -298,10 +319,11 @@ h2.onovo-title-2{
         align-items: center;
     }
 
-    .form-container{
+    .form-container {
         padding: 15px;
     }
-    .popup-content{
+
+    .popup-content {
         width: 100%;
         max-width: 100vw;
     }
