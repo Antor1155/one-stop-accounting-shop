@@ -25,12 +25,12 @@ document.getElementById("cform").addEventListener("submit", e=>{
     })
     .then(res =>{
         
-        e.target.reset()
     })
     .catch(error => {
         console.log(error)
-        e.target.reset()
     })
+
+    e.target.reset()
 
 })
 

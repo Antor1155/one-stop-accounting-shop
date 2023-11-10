@@ -171,6 +171,10 @@
         <!-- Wrapper -->
         <div class="wrapper">
 
+            <!-- this part have no value, but used to avoid error of commos js file use in another file, will look for this id and arise error -->
+            <div id="hide-on-load"></div>
+
+
             <!-- Onovo Hero -->
             <section class="onovo-section onovo-hero">
 
@@ -199,6 +203,7 @@
                         </div>
                     </div>
 
+                    
 
                     <!-- Form -->
                     <form id="cform" class="form-section" style="z-index: 2;">
@@ -206,7 +211,7 @@
 
                         <input type="email" placeholder="Email address" name="email" required>
 
-                        <input type="text" placeholder="Phone number" name="name">
+                        <input type="text" placeholder="Phone number" name="phone">
 
                         <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
 
