@@ -1,5 +1,5 @@
 .onovo-header {
-    background-color: #555;
+    background-color: #52383f;
 }
 
 .onovo-hero {
@@ -44,10 +44,10 @@
     /* font-family: var(--font-inter); */
 
     /* font-family: Inter; */
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 2rem;
 
     & .bookkeeping {
         color: #0F0606;
@@ -60,6 +60,7 @@
 
 .main-content>p {
     font-size: .9rem;
+    font-weight: 500;
 }
 
 .orange-button {
@@ -89,6 +90,7 @@
     & p {
         font-size: .6rem;
         margin: 0;
+        font-weight: 500;
     }
 }
 
