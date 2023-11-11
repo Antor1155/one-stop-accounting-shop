@@ -63,35 +63,70 @@
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  min-height: 342px;
   list-style: none;
   background: #fff;
   cursor: pointer;
+  padding: 5px;
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
 }
 .carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
+  background: #ED884A;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
 }
 .card .img img {
-  width: 140px;
-  height: 140px;
+  width: 62px;
+  /* height: 60px; */
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #fff;
+  border: 1px solid #fff;
+}
+.card .five-star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+
+    & span{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black;
+
+        line-height: normal;
+        margin-bottom: -5px;
+        margin-right: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    & img{
+        width: 20px;
+    }
+}
+.card .google{
+    font-weight: bold;
+    font-size: .8rem;
+    margin: 0;
 }
 .carousel .card h2 {
   font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
 }
-.carousel .card span {
+
+.carousel .card .review {
   color: #6A6D78;
-  font-size: 1.31rem;
+  font-size: .7rem;
+  margin-bottom: 5px;
+}
+
+.carousel .review-link{
+    font-size: 1rem;
+    color: #5555dd;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
