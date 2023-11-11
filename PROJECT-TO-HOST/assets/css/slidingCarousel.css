@@ -8,6 +8,7 @@
   position: relative;
 }
 .carousel-wrapper i {
+z-index: 1;
   top: 50%;
   height: 50px;
   width: 50px;
@@ -26,10 +27,10 @@
   transform: translateY(-50%) scale(0.85);
 }
 .carousel-wrapper i:first-child{
-  left: -22px;
+  left: -10px;
 }
 .carousel-wrapper i:last-child{
-  right: -22px;
+  right: -10px;
 }
 .carousel-wrapper .carousel{
   display: grid;
@@ -118,6 +119,14 @@
     font-weight: bold;
     font-size: .8rem;
     margin: 0;
+}
+
+.carousel .rev-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    height: 100%;
 }
 .carousel .card h2 {
   font-weight: 500;
