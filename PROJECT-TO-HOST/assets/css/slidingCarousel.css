@@ -157,4 +157,11 @@ z-index: 1;
   .carousel-wrapper .carousel {
     grid-auto-columns: 100%;
   }
+
+  .carousel-wrapper i:first-child{
+    left: -70px;
+  }
+  .carousel-wrapper i:last-child{
+    right: -70px;
+  }
 }
