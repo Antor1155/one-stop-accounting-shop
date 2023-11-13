@@ -1,5 +1,6 @@
 .onovo-header {
     background-color: #52383f;
+    
 }
 
 .onovo-hero {
@@ -33,7 +34,7 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5vw;
     justify-content: space-between;
 
     width: 47%;
@@ -214,6 +215,23 @@ form.form-section {
 
         & img:nth-child(2){
             margin-top:  10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1460px) {
+    .hero-contents{
+        max-width: 1440px;
+        max-height: 730px;
+
+        min-width: auto;
+        min-height: auto;
+    }
+
+    form.form-section{
+        
+        & input, textarea{
+            padding: 25px;
         }
     }
 }
