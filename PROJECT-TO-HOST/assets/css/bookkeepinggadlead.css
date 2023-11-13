@@ -209,6 +209,7 @@ form.form-section {
 
         & img{
             width: 30%;
+            object-fit: contain;
         }
 
         & img:nth-child(2){
