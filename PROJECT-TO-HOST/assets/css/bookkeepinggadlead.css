@@ -17,7 +17,7 @@
 
 .hero-contents {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     min-width: 90%;
     min-height: 85%;
@@ -138,6 +138,10 @@ form.form-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    & img:nth-child(2){
+        scale: 1.15;
+    }
 }
 
 
@@ -201,10 +205,14 @@ form.form-section {
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: -5px;
+        margin-top: 5px;
 
         & img{
             width: 30%;
+        }
+
+        & img:nth-child(2){
+            margin-top:  10px;
         }
     }
 }
