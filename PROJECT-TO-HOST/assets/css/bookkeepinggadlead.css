@@ -1,6 +1,6 @@
 .onovo-header {
     background-color: #52383f;
-    
+
 }
 
 .onovo-hero {
@@ -24,7 +24,7 @@
     min-height: 85%;
 
 
-    & *{
+    & * {
         padding: 0;
         margin: 0;
     }
@@ -34,7 +34,7 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 5vw;
+    gap: 25px;
     justify-content: space-between;
 
     width: 47%;
@@ -119,11 +119,11 @@ form.form-section {
     & button#submit-button {
         background-color: #EE8443EB;
         height: auto;
-        
+
         border: 1px solid black;
         border-radius: 34px;
         color: black;
-        
+
         font-weight: 700;
         font-size: 1rem;
         line-height: 1rem;
@@ -140,23 +140,24 @@ form.form-section {
     flex-direction: column;
     justify-content: space-between;
 
-    & img:nth-child(2){
+    & img:nth-child(2) {
         scale: 1.15;
     }
 }
 
 
 @media screen and (max-width: 550px) {
-    .onovo-hero{
+    .onovo-hero {
         display: block;
         height: auto;
-        background:#52383f radial-gradient(circle at 138% 59%, rgba(238, 132, 67, 0.92) 0%, #D8D2CE 59%);
+        background: #52383f radial-gradient(circle at 138% 59%, rgba(238, 132, 67, 0.92) 0%, #D8D2CE 59%);
     }
-    .hero-contents{
+
+    .hero-contents {
         flex-direction: column;
     }
 
-    .main-content{
+    .main-content {
         order: 2;
         --webkit-order: 2;
 
@@ -166,12 +167,12 @@ form.form-section {
         gap: 50px;
     }
 
-    .addon-title{
+    .addon-title {
         font-size: 1.2rem;
         text-align: center;
     }
 
-    br{
+    br {
         display: none;
     }
 
@@ -183,7 +184,7 @@ form.form-section {
         margin-bottom: 50px;
     }
 
-    form.form-section{
+    form.form-section {
         order: 3;
         --webkit-order: 3;
 
@@ -194,13 +195,14 @@ form.form-section {
 
         background-color: rgba(217, 217, 217, 0.24);
 
-        & input, textarea{
+        & input,
+        textarea {
             margin-bottom: 10px;
         }
     }
 
-    .logos{
-        order : 1;
+    .logos {
+        order: 1;
         --webkit-order: 1;
 
         width: 100%;
@@ -208,19 +210,19 @@ form.form-section {
         justify-content: space-around;
         margin-top: 5px;
 
-        & img{
+        & img {
             width: 30%;
             object-fit: contain;
         }
 
-        & img:nth-child(2){
-            margin-top:  10px;
+        & img:nth-child(2) {
+            margin-top: 10px;
         }
     }
 }
 
 @media screen and (min-width: 1460px) {
-    .hero-contents{
+    .hero-contents {
         max-width: 1440px;
         max-height: 730px;
 
@@ -228,10 +230,71 @@ form.form-section {
         min-height: auto;
     }
 
-    form.form-section{
-        
-        & input, textarea{
-            padding: 25px;
+    /* main content design here  */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: space-between;
+
+        width: 47%;
+    }
+
+    .addon-title {
+        color: #0F0606;
+        /* font-family: var(--font-inter); */
+
+        /* font-family: Inter; */
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3rem;
+
+        & .bookkeeping {
+            color: #0F0606;
+            font-family: Sansita One;
+            font-size: 3.5rem;
+            font-style: normal;
+            font-weight: 400;
         }
     }
+
+    .main-content>p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .lower-part-with-buttons {
+        .buttons {
+            display: flex;
+            gap: 33px;
+        }
+    
+        & h2 {
+            font-size: 2rem;
+            margin: 15px 0 0 0;
+    
+    
+            & span {
+                font-size: 3rem;
+            }
+        }
+    
+        & p {
+            font-size: .9rem;
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    form.form-section {
+
+        & input,
+        textarea {
+            padding: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+
+
 }
