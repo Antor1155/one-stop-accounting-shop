@@ -17,7 +17,7 @@ document.getElementById("cform").addEventListener("submit", e=>{
                 source : e.target.sourcePage.value
     }
 
-    fetch(`${url}cform`, {
+    fetch(`${url}addon`, {
         method:"POST",
         headers:{
             "Content-Type": "application/json"
