@@ -14,6 +14,7 @@ document.getElementById("cform").addEventListener("submit", e=>{
                 email: e.target.email.value,
                 phone: e.target.phone.value,
                 message: e.target.message.value,
+                source : e.target.sourcePage.value
     }
 
     fetch(`${url}cform`, {
