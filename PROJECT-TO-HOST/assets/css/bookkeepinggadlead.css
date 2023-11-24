@@ -221,6 +221,49 @@ form.form-section {
     }
 }
 
+section#popup{
+    z-index: 99;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    background-color: #00000063;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .content{
+        background-color: white;
+
+        padding: 3rem;
+        border-radius: 2rem;
+        position: relative;
+
+        & button{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+
+            background-color: transparent;
+            border: none;
+            text-shadow: rgb(88, 64, 21) 1px 0 10px;
+
+            transition: transform .5s;
+        }
+
+        & button:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+
+section#popup.hidden{
+    display: none;
+}
+
 @media screen and (min-width: 1460px) {
 
     /* main content design here  */
@@ -297,6 +340,4 @@ form.form-section {
             line-height: 2rem;
         }
     }
-
-
 }
